@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Docker image source to run [Tipboard](http://tipboard.readthedocs.org) server.
+Docker image source to run [Tipboard](http://tipboard.readthedocs.org) dashboard.
 
 ## Building docker image
 
