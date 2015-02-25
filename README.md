@@ -25,13 +25,13 @@ initial layout_config.yaml example:
 
 ```yaml
 details:
-  page_title: Ecosystem dashboard
+  page_title: Dashboard
   layout:
     - row_1_of_2:
       - col_1_of_4:
-        - tile_template: fancy_listing
-          tile_id: ecosystem
-          title: Ecosystem monitoring
+        - tile_template: empty
+          tile_id: empty
+          title: Empty Tile
           classes:
 
       - col_1_of_4:
