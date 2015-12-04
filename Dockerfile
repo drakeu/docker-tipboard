@@ -1,4 +1,4 @@
-FROM dockerfile/ubuntu
+FROM ubuntu
 
 RUN apt-get update
 RUN apt-get install -y python-dev python-virtualenv redis-server supervisor
