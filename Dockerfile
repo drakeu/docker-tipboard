@@ -1,7 +1,7 @@
 FROM xataz/alpine:edge
 MAINTAINER xataz <https://github.com/xataz>
 
-RUN apk add --update python-dev python-virtualenv redis-server supervisor
+RUN apk add --update python-dev python-virtualenv redis supervisor
 
 ADD supervisord.conf /etc/supervisor/supervisord.conf
 
