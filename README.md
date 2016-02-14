@@ -25,57 +25,57 @@ initial layout_config.yaml example:
 
 ```yaml
 details:
-  page_title: Dashboard
-  layout:
+    page_title: Empty Dashboard
+layout:
     - row_1_of_2:
-      - col_1_of_4:
-        - tile_template: empty
-          tile_id: empty
-          title: Empty Tile
-          classes:
+        - col_1_of_4:
+            - tile_template: empty
+              tile_id: empty
+              title: Empty Tile
+              classes:
 
-      - col_1_of_4:
-        - tile_template: empty
-          tile_id: empty
-          title: Empty Tile
-          classes:
+        - col_1_of_4:
+            - tile_template: empty
+              tile_id: empty
+              title: Empty Tile
+              classes:
 
-      - col_1_of_4:
-        - tile_template: empty
-          tile_id: empty
-          title: Empty Tile
-          classes:
+        - col_1_of_4:
+            - tile_template: empty
+              tile_id: empty
+              title: Empty Tile
+              classes:
 
-      - col_1_of_4:
-        - tile_template: empty
-          tile_id: empty
-          title: Empty Tile
-          classes:
+        - col_1_of_4:
+            - tile_template: empty
+              tile_id: empty
+              title: Empty Tile
+              classes:
 
     - row_1_of_2:
-      - col_1_of_4:
-        - tile_template: empty
-          tile_id: empty
-          title: Empty Tile
-          classes:
+        - col_1_of_4:
+            - tile_template: empty
+              tile_id: empty
+              title: Empty Tile
+              classes:
 
-      - col_1_of_4:
-        - tile_template: empty
-          tile_id: empty
-          title: Empty Tile
-          classes:
+        - col_1_of_4:
+            - tile_template: empty
+              tile_id: empty
+              title: Empty Tile
+              classes:
 
-      - col_1_of_4:
-        - tile_template: empty
-          tile_id: empty
-          title: Empty Tile
-          classes:
+        - col_1_of_4:
+            - tile_template: empty
+              tile_id: empty
+              title: Empty Tile
+              classes:
 
-      - col_1_of_4:
-        - tile_template: empty
-          tile_id: empty
-          title: Empty Tile
-          classes:
+        - col_1_of_4:
+            - tile_template: empty
+              tile_id: empty
+              title: Empty Tile
+              classes:
 ```
 
 settings-local.py example:
@@ -99,7 +99,7 @@ You can keep that configuration structure in separate repository.
 Run the following command to start Tipboard:
 
 ```bash
-docker run -d -p 7272:7272 -v [TIPBOARD_CONFIG_DIR]:/root/.tipboard --name=tipboard drakeu/tipboard:1.0
+docker run -d -p 7272:7272 -v [TIPBOARD_CONFIG_DIR]:/root/.tipboard --name=tipboard farfeduc/tipboard:1.0
 ```
 
 ## How image works
@@ -112,7 +112,7 @@ On image exists three main applications:
 If you need you can connect to running image using this command:
 
 ```bash
-docker exec -it tipboard bash
+docker exec -it tipboard sh
 ```
 
 and use supervisorctl to restart redis or tipboard (for example after change key in settings-local.py).
