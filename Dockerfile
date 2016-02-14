@@ -19,4 +19,4 @@ EXPOSE 7272
 
 VOLUME /root/.tipboard
 
-CMD ["/usr/bin/supervisord", "-j", "/root/supervisord.pid"]
+CMD ["/usr/bin/supervisord", "-j", "/root/supervisord.pid", "-c", "/etc/supervisor/supervisord.conf"]
