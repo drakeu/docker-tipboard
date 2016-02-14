@@ -13,7 +13,7 @@ USER root
 
 RUN mkdir /root/logs
 
-RUN bash -c "cd /root && virtualenv tb-env && source /root/tb-env/bin/activate && pip install tipboard"
+RUN sh -c "cd /root && virtualenv tb-env && source /root/tb-env/bin/activate && pip install tipboard"
 
 EXPOSE 7272
 
